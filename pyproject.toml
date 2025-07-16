@@ -1,0 +1,14 @@
+[project]
+name = "qgames"
+version = "0.1.0"
+description = "Quantum algorithms for classical games."
+authors = [
+  { name="Collin Matz", email="collin.matz.a@gmail.com" }
+]
+dependencies = [
+  "Flask>=2.3.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
