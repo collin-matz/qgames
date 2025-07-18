@@ -36,10 +36,13 @@ function attachGameSelectionListeners() {
                 method: "POST",
                 headers: { "Content-Type": "application/json" }
             })
-            .then(res => res.json())
-            .then(data => {
-                console.log(`Server responded: ${data.message}`);
-            });
+                .then(res => res.text())
+                .then(html => {
+                    document.getElementById("main-content-div").innerHTML = html;
+                })
+                .catch(err => {
+                    alert(err);
+                });
         });
     });
 }
