@@ -1,0 +1,41 @@
+/* global styles to apply to all elements */
+:root {
+    --neon-purple: #9400D3;
+    --dark-orchid: #9932CC;
+    --blue-violet: #8A2BE2;
+    --steel-blue: #4682B4;
+    --slate-blue: #6A5ACD;
+}
+
+* {
+    font-family: "Tomorrow";
+}
+
+#quantum-wave {
+    background: linear-gradient(
+        270deg,
+        var(--neon-purple),
+        var(--dark-orchid),
+        var(--blue-violet),
+        var(--steel-blue),
+        var(--slate-blue)
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s ease infinite;
+
+    
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

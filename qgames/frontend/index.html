@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Q-Games</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <script src="./js/main.js"></script>
+    </head>
+
+    <body>
+        <div class="flex flex-col p-8 h-screen">
+
+            <!-- header -->
+            <div class="flex flex-col">
+                <h1 class="text-3xl underline">Project <span id="quantum-wave">Q-Games</span></h1>
+                <h3 class="italic">Quantum algorithms for classic games</h3>
+            </div>
+
+            <!-- body -->
+            <div class="flex flex-1">
+                
+                <!-- left side exploration bar -->
+                <div class="flex flex-col flex-none p-6">
+                    <ul>
+                        <li id="about" class="cursor-pointer">About</li>
+                        <li id="games" class="cursor-pointer">Games</li>
+                    </ul>
+                </div>
+
+                <!-- right side main view -->
+                 <div class="flex flex-grow p-6 justify-evenly" id="main-content-div">
+                    
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="flex justify-evenly">
+                <a class="text-gray-500" href="https://github.com/collin-matz/qgames">GitHub</a>
+            </div>
+            
+
+        </div>
+    </body>
+
+</html>
